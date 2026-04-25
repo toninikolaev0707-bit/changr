@@ -1,9 +1,9 @@
 {
-    "name": "Changr",
+    "name": "ChangrGnidosProducnt",
     "version": "1.2.1",
     "manifest_version": 1,
     "author": "Missing Link Dev",
-    "description": "A simple token image changer to quickly swap out between preset images",
+    "description": "Меняй личико скрытненько",
     "homepage_url": "https://github.com/MissingLinkDev/changr",
     "icon": "/icon.svg",
     "background_url": "/background.html"
