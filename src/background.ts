@@ -1,9 +1,12 @@
 import OBR from "@owlbear-rodeo/sdk";
 import { getPluginId } from "./getPluginId";
 
-// Wait for the SDK to be ready
 OBR.onReady(async () => {
-    // Set up the context menu for image items
+    const role = await OBR.player.getRole();
+
+    // Только ГМ получает меню
+    if (role !== "GM") return;
+
     await OBR.contextMenu.create({
         id: getPluginId("menu"),
         icons: [
